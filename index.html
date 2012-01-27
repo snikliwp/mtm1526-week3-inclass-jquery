@@ -1,0 +1,46 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Intro to jQuery</title>
+	<link href="css/general.css" rel="stylesheet">
+</head>
+<body>
+
+<a href="http://google.ca">Click Me</a>
+
+
+<div class="newform">
+<form>
+<h1>To Do List</h1>
+	<div class="ball">
+		<label for="item"> New To-Do Item </label>
+		<input type="text" id="item" name="item" size="75" class="reqd">
+		<button id="submit">Submit Item</button>
+	</div> <!-- End Class Item --> 
+	
+	<div class="active">
+		<label for="active">Active Items </label>
+		<ol id="active">
+		</ol>
+	</div> <!-- End Class submit --> 
+	
+	<div class="complete">
+		<label for="complete"> Closed Items </label>
+		<ul id="complete">
+		</ul>
+	</div> <!-- End Class submit --> 
+</form>
+</div> <!-- End Class newform --> 
+
+<!-- 
+Loading jQuery from google is a lot faster than loading it from my server
+it will be served from the google server nearest the user, and may already be cashed
+make sure it is loaded before the program's js script so the local script can reference into it
+ -->
+ 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script src="js/todo.js"></script>
+	
+</body>
+</html>
